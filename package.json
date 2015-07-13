@@ -6,6 +6,10 @@
   "bin": {
     "compng": "index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gaastonsr/compng.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
