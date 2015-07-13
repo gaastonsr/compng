@@ -46,7 +46,7 @@ function compressFiles(files, callback) {
             fs.createReadStream(file).pipe(new PngQuant([256, '--ext=.png'])).pipe(writableStream);
 
             writableStream.on('finish', function() {
-                if (files.length === 0) {
+                if (filesQueue.length === 0) {
                     callback();
                 } else {
                     compressNext();
